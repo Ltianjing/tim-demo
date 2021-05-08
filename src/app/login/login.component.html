@@ -1,25 +1,25 @@
 <div>
-    <img src="assets\20190326235340.jpg" />
+  <img src="assets\20190326235340.jpg" />
+</div>
+
+<nz-space nzDirection="vertical" nzSize="large">
+  <nz-input-group *nzSpaceItem nzPrefixIcon="user">
+    <input nz-input placeholder="Username" type="text" [(ngModel)]="userName" />
+  </nz-input-group>
+
+  <nz-input-group *nzSpaceItem nzPrefixIcon="lock">
+    <input
+      nz-input
+      placeholder="Password"
+      type="password"
+      [(ngModel)]="password"
+    />
+  </nz-input-group>
+
+  <button *nzSpaceItem nz-button nzType="primary" (click)="onLogin()">
+    登录
+  </button>
+  <div *nzSpaceItem style="color: red">
+    {{ msgText }}
   </div>
-  
-  <nz-space nzDirection="vertical" nzSize="large">
-    <nz-input-group *nzSpaceItem nzPrefixIcon="user">
-      <input nz-input placeholder="Username" type="text" [(ngModel)]="userName" />
-    </nz-input-group>
-  
-    <nz-input-group *nzSpaceItem nzPrefixIcon="lock">
-      <input
-        nz-input
-        placeholder="Password"
-        type="password"
-        [(ngModel)]="password"
-      />
-    </nz-input-group>
-  
-    <button *nzSpaceItem nz-button nzType="primary" (click)="onLogin()">
-      登录
-    </button>
-    <div *nzSpaceItem style="color: red">
-      {{ msgText }}
-    </div>
-  </nz-space>
+</nz-space>

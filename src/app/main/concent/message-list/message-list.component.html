@@ -1,2 +1,8 @@
-<p>message-list works!</p>
+<app-message-item
+  *ngFor="let item of MsgList"
+  [itemData]="item"
+  (itemClickEvent) = "onItemClick($event)"
+  
+>
+</app-message-item>
 

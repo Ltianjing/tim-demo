@@ -1,1 +1,14 @@
-<p>message-item works!</p>
+<div style="display: flex; padding: 5px">
+  <div style="flex-grow: 0">
+    <nz-avatar [nzSize]="48" nzIcon="user"></nz-avatar>
+  </div>
+  <div style="flex-grow: 1; display: flex; flex-direction: column">
+    <div (click)="onTitleClick(itemData)">{{ itemData.title }}</div>
+    <div style="display: flex; justify-content: space-between">
+      <div>{{ itemData.sender }}</div>
+      <div>
+        {{ itemData.sendTime | date: "yyyy-MM-dd:mm" }}
+      </div>
+    </div>
+  </div>
+</div>

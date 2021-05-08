@@ -31,6 +31,9 @@ import { MessageListComponent } from './main/concent/message-list/message-list.c
 import { ContactListComponent } from './main/concent/contact-list/contact-list.component';
 import { MyListComponent } from './main/concent/my-list/my-list.component';
 import { MessageItemComponent } from './main/concent/message-list/message-item/message-item.component';
+import { MessageTitleComponent } from './main/title/message-title/message-title.component';
+import { MyTitleComponent } from './main/title/my-title/my-title.component';
+import { ContactTitleComponent } from './main/title/contact-title/contact-title.component';
 
 
 
@@ -47,7 +50,10 @@ registerLocaleData(zh);
     MessageListComponent,
     ContactListComponent,
     MyListComponent,
-    MessageItemComponent
+    MessageItemComponent,
+    MessageTitleComponent,
+    MyTitleComponent,
+    ContactTitleComponent
   ],
   imports: [
     BrowserModule,
