@@ -11,10 +11,28 @@ import { HttpClientModule } from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 
-import { LoginComponent } from './login/login.component';
-import { MainComponent } from './main/main.component';
+
 
 import { NzSpaceModule } from 'ng-zorro-antd/space';
+import { NzLayoutModule } from 'ng-zorro-antd/layout';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzAvatarModule } from 'ng-zorro-antd/avatar';
+import { NzGridModule } from 'ng-zorro-antd/grid';
+import { NzMessageModule } from 'ng-zorro-antd/message';
+
+import { LoginComponent } from './login/login.component';
+import { MainComponent } from './main/main.component';
+import { TitleComponent } from './main/title/title.component';
+import { ConcentComponent } from './main/concent/concent.component';
+import { MenuComponent } from './main/menu/menu.component';
+import { MessageListComponent } from './main/concent/message-list/message-list.component';
+import { ContactListComponent } from './main/concent/contact-list/contact-list.component';
+import { MyListComponent } from './main/concent/my-list/my-list.component';
+import { MessageItemComponent } from './main/concent/message-list/message-item/message-item.component';
+
+
 
 registerLocaleData(zh);
 
@@ -22,7 +40,14 @@ registerLocaleData(zh);
   declarations: [
     AppComponent,
     LoginComponent,
-    MainComponent
+    MainComponent,
+    TitleComponent,
+    ConcentComponent,
+    MenuComponent,
+    MessageListComponent,
+    ContactListComponent,
+    MyListComponent,
+    MessageItemComponent
   ],
   imports: [
     BrowserModule,
@@ -32,9 +57,17 @@ registerLocaleData(zh);
     AppRoutingModule,
 
     NzSpaceModule,
-
+    NzLayoutModule,
+    NzInputModule,
+    NzIconModule,
+    NzGridModule,
+    NzButtonModule,
+    NzMessageModule,
+    NzAvatarModule,
+    
   ],
-  providers: [{ provide: NZ_I18N, useValue: zh_CN }],
+  providers: [{ provide: NZ_I18N, useValue: zh_CN },
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

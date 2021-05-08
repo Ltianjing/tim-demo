@@ -13,7 +13,7 @@ export class LoginComponent implements OnInit {
   msgText: string = ""
 
   constructor(
-    private messageService: NzMessageService,
+    // private messageService: NzMessageService,
     private router: Router
   ) { }
 
@@ -28,7 +28,6 @@ export class LoginComponent implements OnInit {
     }
     this.router.navigate(['/main']);
 
-    
   }
 
 }
