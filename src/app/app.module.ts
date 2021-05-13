@@ -25,8 +25,6 @@ import { NzListModule } from 'ng-zorro-antd/list';
 
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
-import { TitleComponent } from './main/title/title.component';
-import { ConcentComponent } from './main/concent/concent.component';
 import { MenuComponent } from './main/menu/menu.component';
 import { MessageListComponent } from './main/concent/message-list/message-list.component';
 import { ContactListComponent } from './main/concent/contact-list/contact-list.component';
@@ -45,8 +43,6 @@ registerLocaleData(zh);
     AppComponent,
     LoginComponent,
     MainComponent,
-    TitleComponent,
-    ConcentComponent,
     MenuComponent,
     MessageListComponent,
     ContactListComponent,

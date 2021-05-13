@@ -3,32 +3,30 @@
     <button
       nz-button
       nzType="link"
-      routerLink="/main/message-list"
+      [routerLink] = "[{outlets: {primary:['message-list'], title:['message-list']}}]"
       routerLinkActive="activebutton"
     >
-    <i nz-icon nzType="message" nzTheme="outline"></i>
+      <i nz-icon nzType="message" nzTheme="outline"></i>
     </button>
   </div>
   <div nz-col nzSpan="4">
     <button
       nz-button
       nzType="link"
-      routerLink="/main/contact-list"
+      [routerLink] = "[{outlets: {primary:['contact-list'], title:['contact-list']}}]"
       routerLinkActive="activebutton"
     >
-    <i nz-icon nzType="team" nzTheme="outline"></i>
-      
+      <i nz-icon nzType="team" nzTheme="outline"></i>
     </button>
   </div>
   <div nz-col nzSpan="4">
     <button
       nz-button
       nzType="link"
-      routerLink="/main/my-list"
+      [routerLink] = "[{outlets: {primary:['my-list'], title:['my-list']}}]"
       routerLinkActive="activebutton"
     >
-    <i nz-icon nzType="home" nzTheme="outline"></i>
-      
+      <i nz-icon nzType="home" nzTheme="outline"></i>
     </button>
   </div>
 </div>

@@ -7,12 +7,12 @@ import { MessageService, MsgItemIntf } from 'src/app/services/message.service';
   styleUrls: ['./message-list.component.css'],
 })
 export class MessageListComponent implements OnInit {
-  MsgList: MsgItemIntf[];
+  MessageList: MsgItemIntf[];
 
   constructor(private messageService: MessageService) {
-    this.messageService.getMessageList().subscribe((data:MsgItemIntf[]) => {
-      this.MsgList = data;
-    });
+    // this.messageService.getMessageList().subscribe((data:MsgItemIntf[]) => {
+    //   this.MessageList = data;
+    // });
   }
 
   ngOnInit(): void {}

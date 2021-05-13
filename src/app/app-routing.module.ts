@@ -13,23 +13,32 @@ import { MyTitleComponent } from './main/title/my-title/my-title.component';
 const routes: Routes = [
   { path: 'login', component: LoginComponent },
   {
-    path: 'main', component: MainComponent, children: [
+    path: 'main',
+    component: MainComponent,
+    children: [
       { path: 'message-list', component: MessageListComponent },
       { path: 'contact-list', component: ContactListComponent },
       { path: 'my-list', component: MyListComponent },
 
-      { path: 'message-list', component: MessageTitleComponent, outlet: 'title' },
-      { path: 'contact-list', component: ContactTitleComponent , outlet: 'title'},
-      { path: 'my-list', component: MyTitleComponent , outlet: 'title'},
+      {
+        path: 'message-list',
+        component: MessageTitleComponent,
+        outlet: 'title',
+      },
+      {
+        path: 'contact-list',
+        component: ContactTitleComponent,
+        outlet: 'title',
+      },
+      { path: 'my-list', component: MyTitleComponent, outlet: 'title' },
 
       { path: '**', redirectTo: 'message-list', pathMatch: 'full' },
-    ]
+    ],
   },
-  
-  
+
   { path: '', redirectTo: 'main', pathMatch: 'full' },
   { path: '**', redirectTo: 'main' },
-]
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
