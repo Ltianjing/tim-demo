@@ -21,6 +21,7 @@ import { NzButtonModule } from 'ng-zorro-antd/button';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { NzGridModule } from 'ng-zorro-antd/grid';
 import { NzMessageModule } from 'ng-zorro-antd/message';
+import { NzListModule } from 'ng-zorro-antd/list';
 
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
@@ -70,6 +71,8 @@ registerLocaleData(zh);
     NzButtonModule,
     NzMessageModule,
     NzAvatarModule,
+    NzListModule,
+    
     
   ],
   providers: [{ provide: NZ_I18N, useValue: zh_CN },

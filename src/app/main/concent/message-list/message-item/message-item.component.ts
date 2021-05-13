@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { MsgItemIntf } from '../message-list.component';
+import { MsgItemIntf } from 'src/app/services/message.service';
+
 
 @Component({
   selector: 'app-message-item',
