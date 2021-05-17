@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 
 
+
 import { NzSpaceModule } from 'ng-zorro-antd/space';
 import { NzLayoutModule } from 'ng-zorro-antd/layout';
 import { NzInputModule } from 'ng-zorro-antd/input';
@@ -33,6 +34,8 @@ import { MessageItemComponent } from './main/concent/message-list/message-item/m
 import { MessageTitleComponent } from './main/title/message-title/message-title.component';
 import { MyTitleComponent } from './main/title/my-title/my-title.component';
 import { ContactTitleComponent } from './main/title/contact-title/contact-title.component';
+import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
+import { InMemoryDataService } from './services/in-memory-data.service';
 
 
 
@@ -58,6 +61,9 @@ registerLocaleData(zh);
     HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    HttpClientInMemoryWebApiModule.forRoot(
+      InMemoryDataService, { dataEncapsulation: false }
+    ),
 
     NzSpaceModule,
     NzLayoutModule,

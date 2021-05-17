@@ -9,7 +9,7 @@ export class MessageService {
   constructor(private http: HttpClient) { }
 
   getMessageList() {
-    return this.http.get<MsgItemIntf[]>("http://localhost:5000/api/msg-list");
+    return this.http.get<MsgItemIntf[]>("api/messages");
   }
 }
 

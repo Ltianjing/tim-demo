@@ -10,9 +10,9 @@ export class MessageListComponent implements OnInit {
   MessageList: MsgItemIntf[];
 
   constructor(private messageService: MessageService) {
-    // this.messageService.getMessageList().subscribe((data:MsgItemIntf[]) => {
-    //   this.MessageList = data;
-    // });
+    this.messageService.getMessageList().subscribe((data:MsgItemIntf[]) => {
+      this.MessageList = data;
+    });
   }
 
   ngOnInit(): void {}
